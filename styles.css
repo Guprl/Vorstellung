@@ -1,0 +1,45 @@
+table, th, td {
+    border:1px solid black;
+}
+
+p {
+font-size: 20px;
+}
+
+td {
+  font-size: 20px;
+}
+
+h2 {
+font-size: 25px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #3983c0;
+  }
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #396f9b;
+    color: rgb(250, 250, 250);
+  }
+  #Tabelle{
+    background-color: #ffffff;
+  }
