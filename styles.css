@@ -1,11 +1,12 @@
 table, th, td {
     border:1px solid black;
 }
-
 p {
 font-size: 20px;
 }
-
+li{
+  font-size: 20px;
+}
 td {
   font-size: 20px;
 }
@@ -19,27 +20,106 @@ font-size: 25px;
   }
   body {
     margin: 0;
-  }
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #3983c0;
-  }
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    justify-content: center;
+    color: rgb(0, 0, 0);
   }
   
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #396f9b;
-    color: rgb(250, 250, 250);
+  footer{
+    color: rgb(255, 255, 255);
   }
-  #Tabelle{
-    background-color: #ffffff;
+#background{
+  background-image: url(hex.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+a{
+  color: grey;
+  font-weight: bold;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: padding 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: -250px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -250px;
+  }
+}
+
+.slide-in-animation {
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+}
+
+.slide-out-animation {
+  animation-name: slideOut;
+  animation-duration: 0.5s;
+}
+#och{
+  font-size: 2px;
+  color: rgb(0, 0, 0);
+}
+#Kontaktb{
+  background-image: url(hex.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}

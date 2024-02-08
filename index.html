@@ -11,7 +11,32 @@
     <title>Vorstellung</title>
   </head>
   <body>
-    <img src="https://www.join.de/files/2018/09/Join_Logo_Sig.jpg" alt="Join-Logo" width="216">
+    <script>
+      function toggleNavbar() {
+        var navbar = document.getElementById("myNavbar");
+        if (navbar.className === "navbar") {
+          navbar.className += " responsive";
+          navbar.classList.add("slide-in-animation");
+        } else {
+          navbar.className = "navbar";
+          navbar.classList.add("slide-out-animation");
+          setTimeout(function() {
+            navbar.classList.remove("slide-out-animation");
+          }, 500);
+        }
+      }
+    </script>
+<div id="background">
+  <div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </a>
+  <a href="./index.html">Zurück</a>
+  <a href="Kontaktdaten.html">Kontaktdaten</a>
+  <a href="./Kontakt.html">Kontaktaufnahme</a>
+  </div>
+
     <div id="Schulische Laufbahn">
       <h1>Vorstellung von Gabriel</h1>
     </div>
@@ -21,7 +46,6 @@
     <div>
       <p> Dabei soll ich mich mit Hilfe einer HTML-Website selbst vorstellen. </p> 
     </div>
-  </div>
   <div>
     <h2>Schulische Laufbahn</h2>
     <p>2013:  <a href="https://www.ev-grundschule-eisenach.de/">Evangelische Grundschule Eisenach</a>
@@ -30,34 +54,30 @@
       <br> Voraussichlicher Abschluss: Abitur 5/2025
     </p>
   </div>
-  <h2>Bereits bestandene Einheiten</h2>
-  <table style="width:100%" id="Tabelle">
-    <tr>
-      <th>Test</th>
-      <th>Verständnis</th>
-      <th>Datum</th>
-    </tr>
-    <tr>
-          <td>PowerShell</td>
-          <td>Verstanden</td>
-          <td>30.01.2024</td>
-        </tr> 
-        <tr>
-          <td>HTML</td>
-          <td>Sehr gut verstanden</td>
-          <td>02.02.2024</td>
-        </tr>
-        
-      </table>
-      <br>
-      <div class="topnav">
-        <a href="./Hobbys.html">Hobbys</a>
-        <a href="./Kontakt.html">Kontakt</a>
-        <a href="./Kontaktdaten.html">Kontaktdaten</a>
-      </div>
-    
+  <p id="och">
+     _
+  </p>
+    <div>
+<h2>Hobbys</h2>
+<p>Klavier spielen ist eine wunderbare Möglichkeit, meine Liebe zur Musik auszudrücken. Ich genieße es, verschiedene Stile zu erkunden und meiner Kreativität freien Lauf zu lassen.
+  Hierbei gefällt es mir besonders Jazz, aber auch klassische Musik bzw. auch Musik aus Medien wie Filmen oder Videospielen zu spielen </p>
+
+<p>Seit ungefähr einem Jahr nehme ich aktiv an Paartanzunterricht teil, wobei wir als Gruppe damit auch auf verschiedenen Bällen auftreten.</p>
+
+<p>In meiner Freizeit spiele ich auch verschiedenste Videospiele.
+  Dabei habe ich keine speziellen Präferenzen für jene Genre.
+  Zu meinen Lieblingsspielen gehören Hollow Knight, Satisfactory, Elden Ring, Hades, The Messenger, Ultrakill und Half Life samt Portal
+ </p>
+
+<p>Kochen ist für mich eine kreative Auszeit vom Alltag. 
+  Ich liebe es, neue Rezepte auszuprobieren und mit frischen Zutaten Gerichte zuzubereiten.</p>
+
+<p>Wie zu Beginn bereits aufgelistet, spiele ich Klavier, jedoch bin ich beim Spielen stets primär bemüht, eigene Komostionen zu erstellen, oder Improvisationen zu bereits bekannten Liedern zu erstellen</p>
+   </div>
+
       <footer>
         Erstellt am 02.02.2024 innerhalb des berufsorientierenden Praktikums bei <a href="https://www.join.de/">Join</a>
       </footer>
+    </div>
     </body>
     </html>
